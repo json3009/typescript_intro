@@ -9,5 +9,10 @@
 
 let x = 3; // Type inferred as number
 let y = [0, 1, 9]; // Type inferred as number[]
+let z = ['hello', 10]; // Type inferred as (string | number)[]
+
+let xx = 3 as const; // Type inferred as 3
+let yy = [0, 1, 9] as const; // Type inferred as readonly [0, 1, 9]
+let zz = ['hello', 10] as const; // Type inferred as readonly ["hello", 10]
 
 // TypeScript infers the types of the variables x and y as number and number[] respectively.
